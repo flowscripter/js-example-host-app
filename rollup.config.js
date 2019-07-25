@@ -10,7 +10,8 @@ module.exports = {
     },
     output: {
         dir: 'dist',
-        format: 'es'
+        format: 'es',
+        sourcemap: true
     },
     watch: {
         include: 'src/**',
