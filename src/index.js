@@ -11,6 +11,9 @@ const log = Debug('index');
 
     if (_.isUndefined(process)) {
         log('Loading browser support');
+        // TODO: fix linting on dynamic import, wait for:
+        //  https://github.com/eslint/eslint/issues/11803
+        //  https://github.com/eslint/eslint/pull/11983
         runtime = await import('./browser');
     } else {
         log('Loading node suppport');
