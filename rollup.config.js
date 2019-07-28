@@ -1,5 +1,6 @@
 import cleanup from 'rollup-plugin-cleanup';
 import commonjs from 'rollup-plugin-commonjs';
+// TODO: fix linting on dynamic import
 import { eslint } from 'rollup-plugin-eslint';
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 import resolve from 'rollup-plugin-node-resolve';
