@@ -1,26 +1,10 @@
-import _ from 'lodash';
 import Debug from 'debug';
 import { EXTENSION_POINT_A_ID } from './ExtensionPointA';
 import { EXTENSION_POINT_B_ID } from './ExtensionPointB';
 
 const log = Debug('index');
 
-(async () => {
-
-    let runtime;
-
-    if (_.isUndefined(process)) {
-        log('Loading browser support');
-        // TODO: fix linting on dynamic import, wait for:
-        //  https://github.com/eslint/eslint/issues/11803
-        //  https://github.com/eslint/eslint/pull/11983
-        runtime = await import('./browser');
-    } else {
-        log('Loading node suppport');
-        runtime = await import('./node');
-    }
-
-    const pluginManager = runtime.default();
+export default async function commonApp(pluginManager) {
 
     pluginManager.registerExtensionPoint(EXTENSION_POINT_A_ID);
     pluginManager.registerExtensionPoint(EXTENSION_POINT_B_ID);
@@ -41,6 +25,7 @@ const log = Debug('index');
 
     aExtensions.forEach(async (info) => {
         log(`Extension for Extension Point A has data: ${info.extensionData}`);
+        log(`Plugin for Extension Point A has data: ${info.pluginData}`);
 
         const aExtension = await pluginManager.instantiate(info.extensionHandle, 'Host');
 
@@ -49,9 +34,10 @@ const log = Debug('index');
 
     bExtensions.forEach(async (info) => {
         log(`Extension for Extension Point B has data: ${info.extensionData}`);
+        log(`Plugin for Extension Point B has data: ${info.pluginData}`);
 
         const bExtension = await pluginManager.instantiate(info.extensionHandle, 'Host');
 
         bExtension.sayGoodbye();
     });
-})();
+}

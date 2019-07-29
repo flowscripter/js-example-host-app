@@ -40,7 +40,7 @@ Now when you run the host app, you should see a plugin discovered:
 
 Install another sample plugin providing two extension (without saving to `package.json`) and run again:
 
-    npm install --no-save @flowscripter/ts-example-plugin
+    npm install --no-save @flowscripter/js-example-plugin
     npm run nodeHostApp
 
 ## Run with Browser
