@@ -45,7 +45,7 @@
         "eslint": "6.2.2",
         "eslint-config-airbnb-base": "13.2.0",
         "eslint-plugin-import": "2.18.2",
-        "husky": "3.0.1",
+        "husky": "3.0.4",
         "rimraf": "2.7.1",
         "rollup": "1.20.2",
         "rollup-plugin-cleanup": "3.1.1",
@@ -55,7 +55,7 @@
         "rollup-plugin-node-resolve": "5.2.0",
         "rollup-plugin-peer-deps-external": "2.2.0",
         "rollup-watch": "4.3.1",
-        "semantic-release": "15.13.19",
+        "semantic-release": "15.13.24",
         "temp-dir": "2.0.0"
     },
     "dependencies": {
