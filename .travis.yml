@@ -10,10 +10,14 @@ notifications:
     on_failure: always
     on_success: change
 stages:
+- name: check
 - name: release
   if: branch = master AND type != pull_request
 jobs:
   include:
+  - stage: check
+    script: npm run lint
+    name: lint
   - stage: release
     script: npm run build && touch dist/.nojekyll
     deploy:

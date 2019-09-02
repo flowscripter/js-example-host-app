@@ -43,24 +43,24 @@
         "@commitlint/cli": "8.1.0",
         "@commitlint/config-conventional": "8.1.0",
         "@flowscripter/renovate-config": "1.0.2",
-        "eslint": "6.1.0",
-        "eslint-config-airbnb-base": "13.2.0",
+        "eslint": "6.3.0",
+        "eslint-config-airbnb-base": "14.0.0",
         "eslint-plugin-import": "2.18.2",
-        "husky": "3.0.1",
+        "husky": "3.0.4",
         "local-web-server": "3.0.7",
-        "rimraf": "2.6.3",
-        "rollup": "1.17.0",
+        "rimraf": "3.0.0",
+        "rollup": "1.20.3",
         "rollup-plugin-cleanup": "3.1.1",
-        "rollup-plugin-commonjs": "10.0.1",
+        "rollup-plugin-commonjs": "10.1.0",
         "rollup-plugin-eslint": "7.0.0",
         "rollup-plugin-node-builtins": "2.1.2",
         "rollup-plugin-node-resolve": "5.2.0",
         "rollup-plugin-peer-deps-external": "2.2.0",
         "rollup-watch": "4.3.1",
-        "semantic-release": "15.13.19"
+        "semantic-release": "15.13.24"
     },
     "dependencies": {
-        "@flowscripter/esm-dynamic-plugins": "1.4.3",
+        "@flowscripter/esm-dynamic-plugins": "1.4.5",
         "debug": "4.1.1",
         "lodash": "4.17.15"
     }
