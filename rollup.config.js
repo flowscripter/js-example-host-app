@@ -1,7 +1,6 @@
 import builtins from 'rollup-plugin-node-builtins';
 import cleanup from 'rollup-plugin-cleanup';
 import commonjs from 'rollup-plugin-commonjs';
-// TODO: fix linting on dynamic import
 import { eslint } from 'rollup-plugin-eslint';
 import resolve from 'rollup-plugin-node-resolve';
 
