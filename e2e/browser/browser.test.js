@@ -1,9 +1,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import { launch } from 'puppeteer';
 import LocalWebServer from 'local-web-server';
 
 let localWebServer;
-let browser;
 
 async function expectConsoleMessages(messages, aPluginCount, bPluginCount, aExtensionCount, bExtensionCount) {
 
@@ -39,8 +37,6 @@ describe('Browser test', () => {
             modulePrefix: ''
         });
 
-        browser = await launch();
-
         const page = await browser.newPage();
 
         await page.goto('http://127.0.0.1:8000/index.html');
@@ -49,7 +45,6 @@ describe('Browser test', () => {
 
     afterAll(() => {
         localWebServer.server.close();
-        browser.close();
     });
 
     test('no plugins selected', async () => {
@@ -62,7 +57,7 @@ describe('Browser test', () => {
 
         await page.goto('http://127.0.0.1:8000/index.html');
 
-        await expect(page).toMatch('ts-example-host-app');
+        await expect(page).toMatch('js-example-host-app');
         await expect(page).toClick('#loadButton');
         await expectConsoleMessages(messages, 0, 0, 0, 0);
     });
@@ -77,7 +72,7 @@ describe('Browser test', () => {
 
         await page.goto('http://127.0.0.1:8000/index.html');
 
-        await expect(page).toMatch('ts-example-host-app');
+        await expect(page).toMatch('js-example-host-app');
         await expect(page).toClick('#pluginACheckbox');
         await expect(page).toClick('#loadButton');
         await expectConsoleMessages(messages, 1, 0, 1, 0);
@@ -93,7 +88,7 @@ describe('Browser test', () => {
 
         await page.goto('http://127.0.0.1:8000/index.html');
 
-        await expect(page).toMatch('ts-example-host-app');
+        await expect(page).toMatch('js-example-host-app');
         await expect(page).toClick('#pluginBCheckbox');
         await expect(page).toClick('#loadButton');
 
@@ -110,7 +105,7 @@ describe('Browser test', () => {
 
         await page.goto('http://127.0.0.1:8000/index.html');
 
-        await expect(page).toMatch('ts-example-host-app');
+        await expect(page).toMatch('js-example-host-app');
         await expect(page).toClick('#pluginACheckbox');
         await expect(page).toClick('#pluginBCheckbox');
         await expect(page).toClick('#loadButton');

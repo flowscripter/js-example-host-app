@@ -19,7 +19,7 @@ export default async function commonApp(pluginManager) {
     log(`Registered ${aExtensions.length} extensions for Extension Point A`);
 
     const bExtensions = Array.from(pluginManager.getExtensions(EXTENSION_POINT_B_ID));
-    log(`Registered ${aExtensions.length} extensions for Extension Point A`);
+    log(`Registered ${bExtensions.length} extensions for Extension Point B`);
 
     const plugins = Array.from(pluginManager.getRegisteredPlugins());
 
