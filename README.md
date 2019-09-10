@@ -24,6 +24,8 @@ Watch: `npm run watch`
 
 Lint: `npm run lint`
 
+E2E test: `npm run e2e`
+
 ## Run with Node
 
 Firstly run the host app and check no plugins are discovered:
