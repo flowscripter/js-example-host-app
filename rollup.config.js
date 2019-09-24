@@ -7,7 +7,7 @@ import resolve from 'rollup-plugin-node-resolve';
 module.exports = [
     {
         input: {
-            nodeEntryPoint: 'src/nodeEntryPoint.js'
+            node: 'src/nodeEntryPoint.js'
         },
         output: {
             dir: 'dist',
@@ -45,7 +45,7 @@ module.exports = [
     },
     {
         input: {
-            browserEntryPoint: 'src/browserEntryPoint.js'
+            browser: 'src/browserEntryPoint.js'
         },
         output: {
             dir: 'dist',
