@@ -41,8 +41,8 @@
         "browserHostApp": "npx ws --open --directory dist"
     },
     "devDependencies": {
-        "@babel/core": "7.6.2",
-        "@babel/preset-env": "7.6.2",
+        "@babel/core": "7.6.3",
+        "@babel/preset-env": "7.6.3",
         "@commitlint/cli": "8.2.0",
         "@commitlint/config-conventional": "8.2.0",
         "@flowscripter/renovate-config": "1.0.3",
