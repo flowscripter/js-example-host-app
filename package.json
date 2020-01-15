@@ -67,7 +67,7 @@
         "rollup-plugin-node-builtins": "2.1.2",
         "rollup-plugin-node-resolve": "5.2.0",
         "rollup-plugin-peer-deps-external": "2.2.0",
-        "semantic-release": "16.0.1"
+        "semantic-release": "16.0.2"
     },
     "dependencies": {
         "@flowscripter/esm-dynamic-plugins": "1.4.21",
