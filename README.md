@@ -1,5 +1,5 @@
 # js-example-host-app
-[![license](https://img.shields.io/github/license/flowscripter/js-example-host-app.svg)](https://github.com/flowscripter/js-example-host-app/blob/master/LICENSE.md)
+[![license](https://img.shields.io/github/license/flowscripter/js-example-host-app.svg)](https://github.com/flowscripter/js-example-host-app/blob/master/LICENSE)
 [![dependencies](https://img.shields.io/david/flowscripter/js-example-host-app.svg)](https://david-dm.org/flowscripter/js-example-host-app)
 [![travis](https://api.travis-ci.com/flowscripter/js-example-host-app.svg)](https://travis-ci.com/flowscripter/js-example-host-app)
 [![npm](https://img.shields.io/npm/v/@flowscripter/js-example-host-app.svg)](https://www.npmjs.com/package/@flowscripter/js-example-host-app)
@@ -10,7 +10,7 @@
 
 ## Development
 
-Firstly: 
+Firstly:
 
 ```
 npm install
@@ -29,7 +29,7 @@ E2E test: `npm run e2e`
 ## Run with Node
 
 Firstly run the host app and check no plugins are discovered:
- 
+
     npm run nodeHostApp
 
 Then install a sample plugin providing one extension (without saving to `package.json`):
@@ -60,10 +60,10 @@ In the browser developer tools, enable debug logging to the console by setting t
 Without checking either listed plugin URL on the page and clicking on 'load', the browser console should show that no plugins are discovered.
 
 When checking one or both plugin URLs and clicking on 'load', you should see plugins discovered.
- 
+
 ## Further Details
 
-Further details on project configuration files and Javascript version support can be found in 
+Further details on project configuration files and Javascript version support can be found in
 the [template for this project](https://github.com/flowscripter/ts-template/blob/master/README.md#overview).
 
 ## License
