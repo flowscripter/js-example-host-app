@@ -60,14 +60,14 @@
         "nixt": "0.5.1",
         "puppeteer": "2.1.1",
         "rimraf": "3.0.2",
-        "rollup": "2.7.0",
+        "rollup": "2.7.1",
         "rollup-plugin-cleanup": "3.1.1",
         "rollup-plugin-commonjs": "10.1.0",
         "rollup-plugin-eslint": "7.0.0",
         "rollup-plugin-node-builtins": "2.1.2",
         "rollup-plugin-node-resolve": "5.2.0",
         "rollup-plugin-peer-deps-external": "2.2.2",
-        "semantic-release": "17.0.6"
+        "semantic-release": "17.0.7"
     },
     "dependencies": {
         "@flowscripter/esm-dynamic-plugins": "1.4.26",
