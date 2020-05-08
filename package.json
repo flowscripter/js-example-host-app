@@ -70,7 +70,7 @@
         "semantic-release": "17.0.7"
     },
     "dependencies": {
-        "@flowscripter/esm-dynamic-plugins": "1.5.2",
+        "@flowscripter/esm-dynamic-plugins": "1.5.3",
         "debug": "4.1.1",
         "lodash": "4.17.15"
     }
